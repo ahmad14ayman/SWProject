@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic</title>
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Temlate css file -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/frameWork.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/doctors.css">
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="containerP" id="top">
+      <a href="#" class="logo">
+        <img class="w-140" src="images/logo.svg" alt="Logo" />
+      </a>
+      <nav>
+        <i class="fas fa-bars menu"></i>
+        <ul class="none">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#appoints">Appointments</a></li>
+        </ul>
+        <div class="form">
+          <i class="fas fa-search"></i>
+        </div>
+      </nav>
+    </div>
+    <script>
+      let menu = document.querySelector(".menu");
+      let lists = document.querySelector(".menu + ul")
+      menu.onclick = () => {
+        lists.classList.toggle("none")
+      }
+    </script>
+  </header>
+  <!-- End Header -->
+  <!-- Start Landing -->
+  <section class="landing">
+    <div class="top-content">
+      <div class="text">
+        <div class="text-content">
+          <h2>
+            Welcome To Doclab<br />
+            We get will soon
+          </h2>
+          <p>
+            The new Doclab Hydro Renewal Ampoule is the latest K-Beauty secret
+            of skin renewal and revitalization invention.
+          </p>
+        </div>
+      </div>
+      <img class="img-doctor" src="images/hero-banner.png" alt="" />
+    </div>
+  </section>
+  <script>
+    let landing = document.querySelector(".landing")
+    landing.onclick = () => {
+      lists.classList.add("none")
+    }
+  </script>
+  <!-- End Landing -->
+  <!-- Start Services -->
+  <section class="services bg" id="services">
+    <div class="containerP">
+      <div class="main-content">
+        <h2>Services</h2>
+        <p>
+          The new Doclab Hydro Renewal Ampoule is the latest K-Beauty secret
+          of skin renewal and revitalization.
+        </p>
+      </div>
+      <div class="services-content">
+        <div class="div-content">
+          <img src="images/icon-1.png" alt="" />
+          <div class="text">
+            <h2>Psychaitry</h2>
+            <p>
+              Psychiatry is a branch of medicine that focuses on the
+              diagnosis, treatment, and prevention of mental, emotional, and
+              behavioral disorders.
+            </p>
+          </div>
+        </div>
+        <div class="div-content">
+          <img src="images/icon-2.png" alt="" />
+          <div class="text">
+            <h2>Gynecology</h2>
+            <p>
+              Gynecology is a branch of medicine that deals with the health of
+              the female reproductive system, including the uterus, ovaries,
+              and vagina.
+            </p>
+          </div>
+        </div>
+        <div class="div-content">
+          <img src="images/icon-3.png" alt="" />
+          <div class="text">
+            <h2>Pulmonology</h2>
+            <p>
+              Pulmonology is a medical specialty focused on the diagnosis,
+              treatment, and management of diseases and conditions related to
+              the respiratory system.
+            </p>
+          </div>
+        </div>
+        <div class="div-content">
+          <img src="images/icon-4.png" alt="" />
+          <div class="text">
+            <h2>Orthopedics</h2>
+            <p>
+              Orthopedics, also known as orthopedic surgery, is a medical
+              specialty focused on the diagnosis, treatment, and prevention of
+              disorders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services -->
+
+  <!-- Start Princing -->
+  <script>
+    function book1() {
+      document.querySelector(".format1").style.display = "block";
+    }
+    function book2() {
+      document.querySelector(".format2").style.display = "block";
+    }
+    function book3() {
+      document.querySelector(".format3").style.display = "block";
+    }
+    function book4() {
+      document.querySelector(".format4").style.display = "block";
+    } function book5() {
+      document.querySelector(".format5").style.display = "block";
+    }
+    function book6() {
+      document.querySelector(".format6").style.display = "block";
+    }
+  </script>
+
+  <div class="princing" id="doctors">
+    <div class="containerP">
+      <div class="main-content">
+        <h2>Doctors</h2>
+        <p>
+          We have the most skilled doctors
+        </p>
+      </div>
+      <!--Doctors-->
+      <div class="friends d-grid">
+        <div class="friend rad-10 p-15 bg-white "> <!--Friend-->
+          <div class="links">
+            <a class="borderCircle bg-blue" href="#"><i class="fa-solid fa-phone"></i></a>
+            <a class="borderCircle" href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <div class="friend-about center-col-flex border-b">
+            <img class="borderCircle w-140 h-140" src="images/doc1.jpg" alt="Dr/Ahmad Atef">
+            <span class="f-bold d-block mt-10">Ahmed Atef</span>
+            <span class="c-grey d-block fs-14 mt-10">surgeon Doctor</span>
+          </div>
+          <div class="friends-details border-b">
+            <div>
+              <span class="c-blue-alter">45 Surgery</span>
+            </div>
+            <div>
+              <span class="c-blue-alter">12 Years of Experience</span>
+            </div>
+          </div>
+          <div class="friend-footer between-flex">
+            <span class="c-grey fs-14">Joined 09/5/2018</span>
+          </div>
+        </div><!--/Friend-->
+        <div class="friend rad-10 p-15 bg-white "> <!--Friend-->
+          <div class="links">
+            <a class="borderCircle bg-blue" href="#"><i class="fa-solid fa-phone"></i></a>
+            <a class="borderCircle" href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <div class="friend-about center-col-flex border-b">
+            <img class="borderCircle w-140 h-140" src="images/doc2.jpg" alt="Dr/Ahmad Atef">
+            <span class="f-bold d-block mt-10">Ahmed Tarek</span>
+            <span class="c-grey d-block fs-14 mt-10">surgeon Doctor</span>
+          </div>
+          <div class="friends-details border-b">
+            <div>
+              <span class="c-blue-alter">31 Surgery</span>
+            </div>
+            <div>
+              <span class="c-blue-alter">9 Years of Experience</span>
+            </div>
+          </div>
+          <div class="friend-footer between-flex">
+            <span class="c-grey fs-14">Joined 09/5/2018</span>
+          </div>
+        </div><!--/Friend-->
+        <div class="friend rad-10 p-15 bg-white "> <!--Friend-->
+          <div class="links">
+            <a class="borderCircle bg-blue" href="#"><i class="fa-solid fa-phone"></i></a>
+            <a class="borderCircle" href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <div class="friend-about center-col-flex border-b">
+            <img class="borderCircle w-140 h-140" src="images/doc3.jpg" alt="Dr/Ahmad Atef">
+            <span class="f-bold d-block mt-10">Rasha Gamal</span>
+            <span class="c-grey d-block fs-14 mt-10">Dentist Doctor</span>
+          </div>
+          <div class="friends-details border-b">
+            <div>
+              <span class="c-blue-alter">36 Bleaching teeth</span>
+            </div>
+            <div>
+              <span class="c-blue-alter">6 Years of Experience</span>
+            </div>
+          </div>
+          <div class="friend-footer between-flex">
+            <span class="c-grey fs-14">Joined 09/5/2018</span>
+          </div>
+        </div><!--/Friend-->
+        <div class="friend rad-10 p-15 bg-white "> <!--Friend-->
+          <div class="links">
+            <a class="borderCircle bg-blue" href="#"><i class="fa-solid fa-phone"></i></a>
+            <a class="borderCircle" href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <div class="friend-about center-col-flex border-b">
+            <img class="borderCircle w-140 h-140" src="images/doc7.jpeg" alt="Dr/Ahmad Atef">
+            <span class="f-bold d-block mt-10">Alaa Elnagar</span>
+            <span class="c-grey d-block fs-14 mt-10">Ophthalmologist Doctor</span>
+          </div>
+          <div class="friends-details border-b">
+            <div>
+              <span class="c-blue-alter">139 Medical consultation </span>
+            </div>
+            <div>
+              <span class="c-blue-alter">5 Years of Experience</span>
+            </div>
+            <span>VIP</span>
+          </div>
+          <div class="friend-footer between-flex">
+            <span class="c-grey fs-14">Joined 09/5/2018</span>
+          </div>
+        </div><!--/Friend-->
+        <div class="friend rad-10 p-15 bg-white "> <!--Friend-->
+          <div class="links">
+            <a class="borderCircle bg-blue" href="#"><i class="fa-solid fa-phone"></i></a>
+            <a class="borderCircle" href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <div class="friend-about center-col-flex border-b">
+            <img class="borderCircle w-140 h-140" src="images/doc5.jpeg" alt="Dr/Ahmad Atef">
+            <span class="f-bold d-block mt-10">Ali Anas</span>
+            <span class="c-grey d-block fs-14 mt-10">Urologist Doctor</span>
+          </div>
+          <div class="friends-details border-b">
+            <div>
+              <span class="c-blue-alter">19 Surgery</span>
+            </div>
+            <div>
+              <span class="c-blue-alter">15 Years of Experience</span>
+            </div>
+          </div>
+          <div class="friend-footer between-flex">
+            <span class="c-grey fs-14">Joined 09/5/2018</span>
+          </div>
+        </div><!--/Friend-->
+        <div class="friend rad-10 p-15 bg-white "> <!--Friend-->
+          <div class="links">
+            <a class="borderCircle bg-blue" href="#"><i class="fa-solid fa-phone"></i></a>
+            <a class="borderCircle" href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <div class="friend-about center-col-flex border-b">
+            <img class="borderCircle w-140 h-140" src="images/doc4.jpg" alt="Dr/Ahmad Atef">
+            <span class="f-bold d-block mt-10">Gumana</span>
+            <span class="c-grey d-block fs-14 mt-10">surgeon Doctor</span>
+          </div>
+          <div class="friends-details border-b">
+            <div>
+              <span class="c-blue-alter">105 Surgery</span>
+            </div>
+            <div>
+              <span class="c-blue-alter">8 Years of Experience</span>
+            </div>
+            <span>VIP</span>
+          </div>
+          <div class="friend-footer between-flex">
+            <span class="c-grey fs-14">Joined 09/5/2018</span>
+          </div>
+        </div><!--/Friend-->
+      </div>
+      <p class="parag-content">Contact us if you have special request</p>
+      <a href="#" class="lnk">Contact Us</a>
+    </div>
+  </div>
+  <!-- End Princing -->
+
+  <div class="princing" id="appoints">
+    <div class="containerP">
+      <div class="projects">
+        <div class="project bg-white rad-10 p-15 "> <!--Appoinments -->
+          <div class="proj-head between-flex">
+            <h4 class="m-0">Department of Surgery</h4>
+          </div>
+          <div class="appoints d-flex between-flex mt-30 ">
+            <div class="center-col-flex border- flex-1 p-">
+              <img class="borderCircle w-40 h-40" src="images/doc1.jpg" alt="">
+              <span class="f-bold d-block mt-10">Dr/Ahmad Atef</span>
+              <span class="fs-14 f-bold mt-1 c-grey c-blue-alter">10$</span>
+              <div class="n-button c-white f-bold bg-blue-alter mt-20">Sur Mon Wed</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-10">9-Am To 1-Pm</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-5">Next Appointment is 09:00</div>
+              <button class="book-button n-button mt-15 bg-blue c-white f-bold b-pointer" type="button">Book
+                Now</button>
+            </div>
+            <div class="center-col-flex border- flex-1">
+              <img class="borderCircle w-40 h-40" src="images/doc2.jpg" alt="">
+              <span class="f-bold d-block mt-10">Dr/Ahmad Tarek</span>
+              <span class="fs-14 f-bold mt-1 c-grey c-blue-alter">8$</span>
+              <div class="n-button c-white f-bold bg-blue-alter mt-20">Sun Tus Thu</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-10">11-Am To 3-Pm</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-5">Next Appointment is 11:00</div>
+              <button class="book-button n-button mt-15 bg-blue c-white f-bold b-pointer" type="button">Book
+                Now</button>
+            </div>
+            <div class="center-col-flex flex-1">
+              <img class="borderCircle w-40 h-40" src="images/doc4.jpg" alt="">
+              <span class="f-bold d-block mt-10">Dr/Gumanna</span>
+              <span class="fs-14 f-bold mt-1 c-grey c-blue-alter">12$</span>
+              <div class="n-button c-white f-bold bg-blue-alter mt-20">Sur Mon Wed</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-10">4-Pm To 7Pm</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-5">Next Appointment is 04:00</div>
+              <button class="book-button n-button mt-15 bg-blue c-white f-bold b-pointer" type="button">Book
+                Now</button>
+            </div>
+          </div>
+        </div> <!--/Appoinments-->
+        <div class="project bg-white rad-10 p-15 mt-5"> <!--Appoinments -->
+          <div class="proj-head between-flex">
+            <h4 class="m-0">Department of Dinist</h4>
+          </div>
+          <div class="appoints d-flex between-flex mt-30 ">
+            <div class="center-col-flex flex-1">
+              <img class="borderCircle w-40 h-40" src="images/doc3.jpg" alt="">
+              <span class="f-bold d-block mt-10">Dr/Rasha Gamal</span>
+              <span class="fs-14 f-bold mt-1 c-grey c-blue-alter">7$</span>
+              <div class="n-button c-white f-bold bg-blue-alter mt-20">Sur Mon Wed</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-10">9-Am To 1-Pm</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-5">Next Appointment is 09:00</div>
+              <button class="book-button n-button mt-15 bg-blue c-white f-bold b-pointer" type="button">Book
+                Now</button>
+            </div>
+          </div>
+        </div> <!--/Appoinments-->
+        <div class="project bg-white rad-10 p-15 mt-5"> <!--Appoinments -->
+          <div class="proj-head between-flex">
+            <h4 class="m-0">Department of Ophthalmologist</h4>
+          </div>
+          <div class="appoints d-flex between-flex mt-30 ">
+            <div class="center-col-flex flex-1">
+              <img class="borderCircle w-40 h-40" src="images/doc7.jpeg" alt="">
+              <span class="f-bold d-block mt-10">Dr/Alaa Elnagar</span>
+              <span class="fs-14 f-bold mt-1 c-grey c-blue-alter">13$</span>
+              <div class="n-button c-white f-bold bg-blue-alter mt-20">Sur Mon Fri</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-10">4-Pm To 7Pm</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-5">Next Appointment is 04:00</div>
+              <button class="book-button n-button mt-15 bg-blue c-white f-bold b-pointer" type="button">Book
+                Now</button>
+            </div>
+          </div>
+        </div> <!--/Appoinments-->
+        <div class="project bg-white rad-10 p-15 mt-5"> <!--Appoinments -->
+          <div class="proj-head between-flex">
+            <h4 class="m-0">Department of Urologist</h4>
+          </div>
+          <div class="appoints d-flex between-flex mt-30 ">
+            <div class="center-col-flex flex-1">
+              <img class="borderCircle w-40 h-40" src="images/doc5.jpeg" alt="">
+              <span class="f-bold d-block mt-10">Dr/Ali Anas</span>
+              <span class="fs-14 f-bold mt-1 c-grey c-blue-alter">12.5$</span>
+              <div class="n-button c-white f-bold bg-blue-alter mt-20">Sur Mon Wed</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-10">9-Am To 1-Pm</div>
+              <div class="n-button c-white f-bold bg-blue-alter mt-5">Next Appointment is 09:00</div>
+              <button class="book-button  n-button mt-15 bg-blue c-white f-bold b-pointer" type="button">Book
+                Now</button>
+            </div>
+          </div>
+          <script>
+            let bookButton = document.querySelectorAll(".book-button");
+            for(let i = 0 ; i<bookButton.length ; i++){
+              bookButton[i].onclick = (e) => {
+                if (e.currentTarget.classList.contains("canceledBook")) {
+                  e.currentTarget.style.backgroundColor = "#0075ff";
+                  e.currentTarget.textContent = "Book Now";
+                  e.currentTarget.classList.remove("canceledBook")
+                }
+                else {
+                  e.currentTarget.style.backgroundColor = "#f44336"
+                  e.currentTarget.classList.add("canceledBook");
+                  if (e.currentTarget.classList.contains("canceledBook"))
+                    e.currentTarget.textContent = "Cancel"
+                }
+              }
+            }
+          </script>
+        </div> <!--/Appoinments-->
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End Princing -->
+
+
+  <!-- Start Footer -->
+  <div class="footer">
+    <div class="containerP">
+      <img src="images/logo.svg" alt="Logo" />
+      <div class="text">
+        <h2>We Are Social</h2>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"> <i class="fas fa-home"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2024 <span>Clinic</span> All Right Reserved</p>
+    </div>
+  </div>
+  <!-- End Footer -->
+  <span class="up"><i class="fas fa-arrow-up"></i></span>
+  <script>
+    let upbutton = document.querySelector(".up");
+    window.onscroll = () => {
+      if (window.scrollY >= 700)
+        upbutton.style.opacity = 1;
+      else
+        upbutton.style.opacity = 0;
+    }
+    upbutton.onclick = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</body>
+
+</html>
